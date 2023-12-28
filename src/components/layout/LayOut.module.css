@@ -1,0 +1,144 @@
+.container{
+    display: flex;
+}
+
+.dashboard{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.topBaseGradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20rem;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+
+.topBaseGradient>:nth-child(2){
+    left: 40%;
+}
+.topBaseGradient>:nth-child(3){
+    right:0;
+}
+
+.header{
+    display: flex;
+    padding: 2rem 4rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+
+}
+
+ .header>:nth-child(1){
+    font-size: 1rem;
+ }
+ .searchBar{
+    background-color: rgba(255, 255, 255, 0.496);
+    width: 30%;
+    max-width: 25rem;
+    padding: .8rem 0;
+    border-radius: 8px;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 2px solid rgb(63, 63, 63);
+    box-sizing: border-box;
+ }
+ .searchBar>input{
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 100%;
+ }
+
+ .profile{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+ }
+ .profile>img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+ }
+
+ .details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+ }
+
+ .details>:nth-child(1){
+    font-size: 1rem;
+    font-weight: bold;
+ }
+
+ .details>:nth-child(2){
+   font-size: 0.8rem;
+ }
+
+ .content{
+   display: flex;
+   margin: auto;
+   align-items: center;
+   margin-top: -4rem;
+   height: 100%;
+
+ }
+ .content>div{
+   width: 100%;
+   /* min-width: 75vh; */
+ }
+
+ @media only screen and (max-width: 600px)  {
+   .header{
+      padding: 2rem 1rem;
+      justify-content: start;
+      gap: 8px;
+      margin-left: 0;
+      margin-bottom: 3rem;
+      padding-right: 10px;
+   }
+   .header>span{
+      text-align: center;
+   }
+   .searchBar{
+      display: none;
+   }
+
+   .profile{
+      flex-direction: column;
+      align-content: left;
+      
+   }
+   .profile>:nth-child(1){
+      align-self: center;
+   }
+
+   .details>:nth-child(1){
+      font-size: 0.8rem;
+   }
+   .details>:nth-child(1){
+      font-size: 0.5;
+   }
+   .content{
+      flex-direction: column;
+      
+   }
+   /* .content>div{
+      width: 100%;
+      
+   } */
+ }

@@ -1,0 +1,25 @@
+.table-container{
+ padding: 1rem 5rem;
+
+}
+
+.table-container>:nth-child(1){
+    border-radius: 10px!important;
+    overflow: hidden!important;
+}
+
+.MuiTableRow-root, .MuiTableCell-root{
+    border: none!important;
+}
+
+@media screen and (max-width: 600px) {
+    .table-container{
+        padding: 0.5rem ;
+        margin-left: 0;
+        width: 100%;
+
+    }
+    .table-container>:nth-child(1){
+        width: 20rem;
+    }
+}

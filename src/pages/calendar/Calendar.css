@@ -1,0 +1,43 @@
+.calendar-container{
+    margin: auto;
+    padding: 0 4rem;
+    width: 90%;
+    max-width: 1100px;
+}
+
+.fc-event{
+    background: var(--orange-gradient)!important;
+}
+
+.fc  .fc-timegrid-slot{
+    height: 2.5rem!important;
+}
+
+td{
+    border: 1px solid var(--grey);
+}
+
+/* mobile view */
+@media screen and (max-width: 600px) {
+    .calendar-container{
+        margin-top: 2rem;
+        padding: 0;
+    } 
+
+    .fc-media-screen{
+        width: 100%;
+    }
+
+.fc .fc-view-harness{
+    height: 350px!important;
+}
+
+.fc .fc-col-header-cell-cushion{
+    font-size: smaller;
+}
+
+.fc-timegrid-event .fc-event-time, .fc-v-event .fc-event-title {
+    font-size: 10px;
+}
+   
+}

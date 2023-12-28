@@ -1,0 +1,49 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    max-width: 6rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem;
+    align-items: center;
+    background-color: rgb(20 20 20);
+
+
+}
+
+.logo{
+    width: 45%;
+    max-width: 5rem;
+
+}
+
+.menu{
+    margin-top:4rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.item>svg{
+    fill: white;
+    width: 3rem;
+}
+:active,:focus.item>svg{
+    fill: goldenrod;
+}
+
+h1.title{
+    font-size: 1rem;
+    color: #ffff;
+    text-decoration-color: black;
+}
+:active,:focus.title{
+    color: goldenrod;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+       height: 100%;
+        
+    }  
+}

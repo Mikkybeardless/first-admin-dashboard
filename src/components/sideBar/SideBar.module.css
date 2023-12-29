@@ -35,15 +35,26 @@
 h1.title{
     font-size: 1rem;
     color: #ffff;
-    text-decoration-color: black;
+    text-decoration-style:none;
 }
-:active,:focus.title{
+:active,:focus h1.title{
     color: goldenrod;
 }
 
 @media screen and (max-width: 600px) {
     .container{
        height: 100%;
+       width: 20%;
+       position: fixed;
+       z-index: 100;
         
-    }  
+    } 
+    .menu{
+        gap: 6rem;
+    } 
+
+    h1.title{
+        font-size: 0.7rem;
+        text-align: center;
+    }
 }

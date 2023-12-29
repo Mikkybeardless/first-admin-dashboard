@@ -99,17 +99,19 @@
  }
  .content>div{
    width: 100%;
-   /* min-width: 75vh; */
+
  }
 
  @media only screen and (max-width: 600px)  {
+   .container{
+      width: 100vw;
+   }
    .header{
       padding: 2rem 1rem;
       justify-content: start;
       gap: 8px;
-      margin-left: 0;
       margin-bottom: 3rem;
-      padding-right: 10px;
+      padding-left: 6rem;
    }
    .header>span{
       text-align: center;
@@ -135,10 +137,15 @@
    }
    .content{
       flex-direction: column;
+      /* width: 100%; */
+      width: 80%;
+      margin-right: 0;
+      
       
    }
-   /* .content>div{
-      width: 100%;
-      
-   } */
+
+   .content>div{
+      padding-right:0.3rem;
+   }
+
  }

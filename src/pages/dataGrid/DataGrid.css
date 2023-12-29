@@ -20,6 +20,6 @@
 
     }
     .table-container>:nth-child(1){
-        width: 20rem;
+        width: 100%;
     }
 }

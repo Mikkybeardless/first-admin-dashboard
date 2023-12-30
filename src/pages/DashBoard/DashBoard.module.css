@@ -106,15 +106,15 @@
   }
 
   .cardHead{
-    font-size: .7rem;
+    font-size: .6rem;
   }
 
   .cardHead>:nth-child(2){
     margin-left: .5rem;
   }
   .cardAmount>:nth-child(2){
-    font-size: .8rem;
-    margin-left: 6px;
+    font-size: .6rem;
+    margin-left: 5px;
   }
 
   .orders{

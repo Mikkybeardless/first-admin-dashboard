@@ -32,14 +32,15 @@
     fill: goldenrod;
 }
 
-h1.title{
+a.title{
     font-size: 1rem;
     color: #ffff;
-    text-decoration-style:none;
-}
-:active,:focus h1.title{
+    display: block;
+    text-decoration:none;
+ }
+ /* :active,:focus.title{
     color: goldenrod;
-}
+}  */
 
 @media screen and (max-width: 600px) {
     .container{

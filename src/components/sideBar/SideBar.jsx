@@ -11,22 +11,22 @@ const SideBar = () => {
       <div className={css.menu}>
         <NavLink to='dashboard' className={css.item} title='Dashboard'>
           <MdSpaceDashboard size={30} />
-          <h1 className={css.title}>Dashboard</h1>
+          <a className={css.title}>Dashboard</a>
         </NavLink>
 
         <NavLink to='calendar' className={css.item} title='Calender'>
           <AiFillCalendar size={30} />
-          <h1 className={css.title}>Calendar</h1>
+          <a className={css.title}>Calendar</a>
         </NavLink>
 
         <NavLink to='board' className={css.item} title='Trello Board'>
           <FaTasks size={30} />
-          <h1 className={css.title}>Board</h1>
+          <a className={css.title}>Board</a>
         </NavLink>
 
         <NavLink to='users' className={css.item} title='User'>
           <AiOutlineTable size={30} />
-          <h1 className={css.title}>Users</h1>
+          <a className={css.title}>Users</a>
         </NavLink>
       </div>
     </div>
